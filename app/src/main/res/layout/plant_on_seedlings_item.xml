@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/plantOnSeedlingsIdItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/plantOnSeedlingsImageItem"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:background="@color/dark_mint"
+            android:contentDescription="@string/plant_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plantOnSeedlingsNameItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingHorizontal="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/plant_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/menuEditDeletePlantOnSeedlings"
+            app:layout_constraintStart_toEndOf="@+id/plantOnSeedlingsImageItem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plantOnSeedlingsSortItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingHorizontal="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/plant_sort"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/plantOnSeedlingsNameItem"
+            app:layout_constraintStart_toEndOf="@+id/plantOnSeedlingsImageItem"
+            app:layout_constraintTop_toBottomOf="@id/plantOnSeedlingsNameItem" />
+
+        <View
+            android:id="@+id/dividerPlantOnSeedlings1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plantOnSeedlingsImageItem" />
+
+        <TextView
+            android:id="@+id/labelPlantOnSeedlingsDateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/label_date_on_seedlings"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/plantOnSeedlingsDateItem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dividerPlantOnSeedlings1" />
+
+        <TextView
+            android:id="@+id/plantOnSeedlingsDateItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/labelPlantOnSeedlingsDateItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/labelPlantOnSeedlingsDateItem"
+            app:layout_constraintTop_toTopOf="@+id/labelPlantOnSeedlingsDateItem" />
+
+        <TextView
+            android:id="@+id/waterInPlantOnSeedlingsItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="4dp"
+            android:text="@string/water_in_some_days"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelPlantOnSeedlingsDateItem" />
+
+        <TextView
+            android:id="@+id/fertilizeInPlantOnSeedlingsItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/fertilize_in_some_days"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waterInPlantOnSeedlingsItem" />
+
+        <Button
+            android:id="@+id/buttonWaterPlantOnSeedlings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/water_plant"
+            app:icon="@drawable/watering_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFertilizePlantOnSeedlings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fertilizeInPlantOnSeedlingsItem" />
+
+        <Button
+            android:id="@+id/buttonFertilizePlantOnSeedlings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/fertilize_plant"
+            app:icon="@drawable/fertilize_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonWaterPlantOnSeedlings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonWaterPlantOnSeedlings"
+            app:layout_constraintTop_toTopOf="@+id/buttonWaterPlantOnSeedlings" />
+
+        <ImageButton
+            android:id="@+id/menuEditDeletePlantOnSeedlings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/menu_button_description_add_edit_plant_on_seedlings"
+            android:src="@drawable/menu_vertical_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

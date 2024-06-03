@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/plantInGroundIdItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/plantInGroundImageItem"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:background="@color/dark_mint"
+            android:contentDescription="@string/plant_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plantInGroundNameItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingHorizontal="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/plant_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/menuEditDeletePlantInGround"
+            app:layout_constraintStart_toEndOf="@+id/plantInGroundImageItem"
+            app:layout_constraintTop_toTopOf="@+id/plantInGroundImageItem" />
+
+
+        <TextView
+            android:id="@+id/plantInGroundSortItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingHorizontal="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/plant_sort"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/plantInGroundNameItem"
+            app:layout_constraintStart_toEndOf="@+id/plantInGroundImageItem"
+            app:layout_constraintTop_toBottomOf="@+id/plantInGroundNameItem" />
+
+        <View
+            android:id="@+id/dividerPlantInGround1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plantInGroundImageItem" />
+
+        <TextView
+            android:id="@+id/labelPlantInGroundDateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/label_date_in_ground"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/plantInGroundDateItem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerPlantInGround1" />
+
+        <TextView
+            android:id="@+id/plantInGroundDateItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/labelPlantInGroundDateItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/labelPlantInGroundDateItem"
+            app:layout_constraintTop_toTopOf="@+id/labelPlantInGroundDateItem" />
+
+        <TextView
+            android:id="@+id/waterInPlantInGroundItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="4dp"
+            android:text="@string/water_in_some_days"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelPlantInGroundDateItem" />
+
+        <TextView
+            android:id="@+id/fertilizeInPlantInGroundItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/fertilize_in_some_days"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waterInPlantInGroundItem" />
+
+        <Button
+            android:id="@+id/buttonWaterPlantInGround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/water_plant"
+            app:icon="@drawable/watering_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFertilizePlantInGround"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fertilizeInPlantInGroundItem" />
+
+        <Button
+            android:id="@+id/buttonFertilizePlantInGround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/fertilize_plant"
+            app:icon="@drawable/fertilize_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonWaterPlantInGround"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonWaterPlantInGround"
+            app:layout_constraintTop_toTopOf="@+id/buttonWaterPlantInGround" />
+
+        <ImageButton
+            android:id="@+id/menuEditDeletePlantInGround"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/menu_button_description_add_edit_plant_in_ground"
+            android:src="@drawable/menu_vertical_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

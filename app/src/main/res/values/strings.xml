@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Помощник огородника</string>
+    <string name="gardener_helper_logo">Логотип приложения</string>
+
+    <string name="my_plants">Мои растения</string>
+    <string name="plants_on_seedlings">Растения на рассаде</string>
+    <string name="plants_in_ground">Высажены в грунт</string>
+
+    <string name="add_my_plant">Добавить растение в каталог</string>
+    <string name="add_plant_on_seedlings">Добавить растение в список растений на рассаде</string>
+    <string name="add_plant_in_ground">Добавить растение в спсиок растений, высаженных в грунт</string>
+
+    <string name="empty_my_plants_catalog_text">Здесь пока ничего нет.\nДобавьте ваши растения в личный каталог!</string>
+    <string name="empty_plants_on_seedlings_list_text">Здесь пока ничего нет.\nДобавьте ваши растения на рассаде, чтобы отслеживать уход!</string>
+    <string name="empty_plants_in_ground_list_text">Здесь пока ничего нет.\nДобавьте ваши растения, высаженные в грунт, чтобы отслеживать уход!</string>
+
+    <string name="download_plant_image">Загрузить фото</string>
+    <string name="reset_plant_image">Сбросить фото</string>
+
+    <string name="plant_image">Фотография растения</string>
+    <string name="plant_name">Название растения</string>
+    <string name="plant_sort">Сорт растения</string>
+    <string name="date_planted_in_ground">Дата высадки в грунт</string>
+    <string name="date_harvesting">Дата сборки урожая</string>
+    <string name="plant_description">Краткое описание</string>
+    <string name="plant_care">Уход</string>
+    <string name="other_info">Прочая информация</string>
+
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="add">Добавить</string>
+    <string name="add_save_description_text">Добавить или сохранить</string>
+
+    <string name="adding">Добавление</string>
+    <string name="adding_plant_on_seedlings">Растения на рассаде</string>
+    <string name="adding_plant_in_ground">Растения, высаженного в грунт</string>
+    <string name="editing">Редактирование</string>
+
+    <string name="date_on_seedlings">Дата посева на рассаду</string>
+    <string name="choose_date">Выберите дату</string>
+    <string name="choose">Выберите</string>
+
+    <string name="month">Месяц</string>
+    <string name="decade">Декада</string>
+
+    <string name="delete_my_plant">Удалить растение</string>
+    <string name="edit_my_plant">Редактировать информацию</string>
+
+    <string name="title_plants_on_seedlings">На рассаде</string>
+    <string name="title_plants_in_ground_list">Высажены в грунт</string>
+
+    <string name="water_plant">Полить</string>
+    <string name="fertilize_plant">Подкормить</string>
+
+    <string name="label_date_on_seedlings">Высажено на рассаду:</string>
+    <string name="label_date_in_ground">Высажено в грунт:</string>
+
+    <string name="edit_plant">Редактировать</string>
+    <string name="delete_plant">Удалить</string>
+
+    <string name="choose_period">Выберите периодичность</string>
+    <string name="setup_plant_care_system_text">Установка системы ухода за растением</string>
+
+    <string name="water_in_some_days">Дней до следующего полива:</string>
+    <string name="fertilize_in_some_days">Дней до следующей подкормки:</string>
+    <string name="it_is_time_to_water">Время полить растение!</string>
+    <string name="it_is_time_to_fertilize">Время подкормить растение!</string>
+
+    <string name="required_date_planted_in_ground">Дата высадки в грунт *</string>
+    <string name="required_date_date_on_seedlings">Дата посева на рассаду *</string>
+    <string name="required_watering_period">Периодичность полива *</string>
+    <string name="required_fertilization_period">Периодичность подкормки *</string>
+
+    <string name="plant_in_list_deletion_title">Удалить выбранное растение?</string>
+    <string name="plant_in_list_deletion_message">Вы не сможете отменить удаление выбранного растения</string>
+
+    <string name="my_plant_deletion_title">Удалить растение из личного каталога?</string>
+    <string name="my_plant_deletion_message">Данное растение также удалится из списков растений на рассаде или растений, высаженных в грунт, если оно в них находится</string>
+
+    <string name="menu_button_description_add_edit_plant_on_seedlings">Кнопка меню для редактирования или удаления растения из списка растений на рассаде</string>
+    <string name="menu_button_description_add_edit_plant_in_ground">Кнопка меню для редактирования или удаления растения из списка растений, высаженных в грунт</string>
+
+    <string-array name="water_freq_array">
+        <item>1 раз в день</item>
+        <item>1 раз в 2 дня</item>
+        <item>1 раз в неделю</item>
+        <item>1 раз в 2 недели</item>
+        <item>1 раз в месяц</item>
+    </string-array>
+
+    <string-array name="fertilize_freq_array">
+        <item>Каждую неделю</item>
+        <item>Каждые 2 недели</item>
+        <item>Каждые 3 недели</item>
+        <item>Каждый месяц</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+    <string-array name="decades">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

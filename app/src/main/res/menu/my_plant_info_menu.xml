@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuDeleteMyPlantInfo"
+        android:icon="@drawable/delete_icon"
+        android:title="@string/delete_my_plant"
+        />
+    <item android:id="@+id/menuEditMyPlantInfo"
+        android:icon="@drawable/edit_icon"
+        android:title="@string/edit_my_plant"/>
+</menu>
