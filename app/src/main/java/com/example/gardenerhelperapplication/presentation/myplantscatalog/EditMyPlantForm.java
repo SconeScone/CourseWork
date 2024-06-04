@@ -63,6 +63,7 @@ public class EditMyPlantForm extends Fragment {
                     binding.myPlantProgressBar.setVisibility(View.VISIBLE); // Делаем индикатор выполнения (progress bar) видимым, пока изображение загружается
                     binding.editableMyPlantImage.setImageBitmap(null);
                     binding.saveEditableMyPlantForm.setEnabled(false); // Пока изображение загружается, кнопка сохранения отредактированной информации недоступна
+                    binding.downloadMyPlantImage.setEnabled(false); // Пока изображение загружается, кнопка загрузки изображения недоступна
 
                     Glide.with(EditMyPlantForm.this).asBitmap().load(plantImageUri)
                             .skipMemoryCache(true)
@@ -71,6 +72,7 @@ public class EditMyPlantForm extends Fragment {
                                 public boolean onLoadFailed(@Nullable GlideException e, @Nullable Object model, @NonNull Target<Bitmap> target, boolean isFirstResource) {
                                     binding.myPlantProgressBar.setVisibility(View.GONE);
                                     binding.saveEditableMyPlantForm.setEnabled(true);
+                                    binding.downloadMyPlantImage.setEnabled(true);
                                     return false;
                                 }
 
